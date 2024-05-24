@@ -1,7 +1,7 @@
 import CreatePublicationRequest from "../domain/DTOS/PublicationRequest";
 import PublicationRepository from "../domain/PublicationRepository";
 
-export default class CreateUserCase {
+export default class CreatePublicationCase {
 
     constructor(readonly entryRepository: PublicationRepository){}
 

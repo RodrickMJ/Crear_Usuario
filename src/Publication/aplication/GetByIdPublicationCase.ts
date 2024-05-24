@@ -1,7 +1,7 @@
 import PublicationRepository from "../domain/PublicationRepository";
 import PublicationResponse from "../domain/DTOS/PublicationResponse";
 
-export default class getByIdUseCase {
+export default class getByIdPublicationCase {
     constructor(readonly repository: PublicationRepository){}
 
     async run (id: string){
