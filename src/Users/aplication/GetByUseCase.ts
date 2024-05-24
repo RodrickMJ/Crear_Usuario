@@ -1,4 +1,3 @@
-import { UserRequest } from "../domain/DTOS/UserRequest";
 import UserRepository from "../domain/UserRepository";
 import UserResponse from "../domain/DTOS/UserResponse";
 

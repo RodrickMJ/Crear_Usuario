@@ -11,6 +11,7 @@ const config = {
     waitForConnections: true,
     connectionLimit: 10,
     port: parseInt(process.env["DATABASE_PORT"] ?? "4000"),
+    
   };
 
   const connection_pool = mysql.createPool(config);

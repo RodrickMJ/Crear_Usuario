@@ -57,12 +57,12 @@ export default class MysqlUserRepository implements UserRepository {
     }
 
     async getById(id: string): Promise<userEntry | null> {
-        const setence = "SELECT * FROM Users WHERE id = ?";
+        const setence:string = "SELECT * FROM Users WHERE id = ?";
         const params = [id];
 
         try {
             const [entry]: any = await query(setence, params);
-
+            console.log(entry)
             if (entry === null || entry.length === 0) {
                 return null
             }

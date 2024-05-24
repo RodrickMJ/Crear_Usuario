@@ -1,6 +1,6 @@
 
 export default interface UserResponse {
-    id: string,
+    id: number,
     username: string,
     avatar: string | null,
     nombre: string,

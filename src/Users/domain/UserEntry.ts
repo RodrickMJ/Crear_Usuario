@@ -1,5 +1,5 @@
 export default interface userEntry {
-    id: string,
+    id: number,
     username: string,
     nombre: string,
     email: string,

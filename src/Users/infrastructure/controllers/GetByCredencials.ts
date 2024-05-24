@@ -5,7 +5,6 @@ export default class GetByIdController {
     constructor(readonly useCase: getByUseCase) { }
 
     async run(req: Request, res: Response) {
-        
         const result = await this.useCase.run(req.params.id)
 
         if (result === null){
